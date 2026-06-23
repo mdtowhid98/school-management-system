@@ -17,7 +17,7 @@ function RegistrationForm() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+   // e.preventDefault();
     console.log(student);
     alert("Student Registration Successful!");
   };
@@ -58,8 +58,8 @@ function RegistrationForm() {
             onChange={handleChange}
             className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-
-          <input
+          
+          <label>Email:</label> <input
             type="email"
             name="email"
             placeholder="Enter Email"
